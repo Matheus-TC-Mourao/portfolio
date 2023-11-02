@@ -42,21 +42,22 @@ code {
 	gap: 48px;
 
 	width: 100%;
-	max-width: 1366px;
+	max-width: 1260px;
 	padding: 0 24px;
 
 	margin: 160px auto 100px;
-
-	background-color: aqua;
 }
 
 .section {
 	height: 400px;
-	background-color: blueviolet;
 }
 
 .card {
 	border-radius: 12px;
 	background-color: var(--background-card);
 	box-shadow: var(--shadow-card);
+}
+
+.shadow_img {
+	box-shadow: var(--shadow-image);
 }
