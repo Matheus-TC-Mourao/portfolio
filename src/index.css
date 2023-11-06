@@ -48,6 +48,22 @@ code {
 	margin: 160px auto 100px;
 }
 
+.project_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 42px;
+	margin-top: 16px;
+}
+
+.tag {
+	font-size: 15px;
+	font-weight: 300;
+	color: var(--secondary);
+	padding: 5px 9px;
+	border-radius: 5px;
+	background: #dce775;
+}
+
 .card {
 	border-radius: 12px;
 	background-color: var(--background-card);
@@ -76,4 +92,52 @@ code {
 	transform: translate(-0.25rem, -0.25rem);
 	background: var(--hover-bg);
 	box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.buttonCV {
+	--color: #560bad;
+	font-family: inherit;
+	display: flex;
+	align-items: center;
+	line-height: 2.5em;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid var(--color);
+	transition: color 0.5s;
+	z-index: 1;
+	font-size: 17px;
+	border-radius: 6px;
+	font-weight: 500;
+	color: var(--color);
+}
+
+.buttonCV:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	background: var(--color);
+	height: 150px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.buttonCV:hover {
+	color: #fff;
+}
+
+.buttonCV:before {
+	top: 100%;
+	left: 100%;
+	transition: all 0.7s;
+}
+
+.buttonCV:hover:before {
+	top: -30px;
+	left: -30px;
+}
+
+.buttonCV:active:before {
+	background: #3a0ca3;
+	transition: background 0s;
 }

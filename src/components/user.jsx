@@ -2,6 +2,7 @@ import React from 'react';
 import Image from '../assets/imagem curriculo.png';
 import {
 	EnvelopeSimple,
+	FileArrowDown,
 	GithubLogo,
 	LinkedinLogo,
 	WhatsappLogo,
@@ -28,7 +29,7 @@ const User = () => {
 						target="_blank"
 						className="w-[46px] h-[46px] button rounded-md"
 					>
-						<LinkedinLogo size={22} />
+						<LinkedinLogo size={22} weight="fill" />
 					</a>
 					<a
 						href="https://github.com/Matheus-TC-Mourao"
@@ -52,9 +53,15 @@ const User = () => {
 						target="_blank"
 						className="w-[46px] h-[46px] button rounded-md"
 					>
-						<WhatsappLogo size={22} weight="duotone" />
+						<WhatsappLogo size={22} />
 					</a>
 				</div>
+
+				<a href="" target="_blank" className="mt-6 buttonCV gap-x-2 px-2">
+					<FileArrowDown className="svg" size={32} weight="duotone" />
+
+					<span>Download CV</span>
+				</a>
 			</div>
 		</section>
 	);
