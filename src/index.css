@@ -48,20 +48,28 @@ code {
 	margin: 160px auto 100px;
 }
 
+.text_about {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: justify;
+	margin-top: 12px;
+}
+
 .project_content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 42px;
-	margin-top: 16px;
+	margin-top: 22px;
 }
 
 .tag {
 	font-size: 15px;
-	font-weight: 300;
-	color: var(--secondary);
+	font-weight: 600;
+	color: #263238;
 	padding: 5px 9px;
 	border-radius: 5px;
-	background: #dce775;
+	background: #eeeeee;
 }
 
 .card {
@@ -140,4 +148,31 @@ code {
 .buttonCV:active:before {
 	background: #3a0ca3;
 	transition: background 0s;
+}
+
+@media (max-width: 1200px) {
+	.app {
+		gap: 40px;
+		grid-template-columns: auto 1fr;
+		margin: 120px 0;
+	}
+}
+
+@media (max-width: 1080px) {
+	.app {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.app {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 550px) {
+	.subtitle {
+		font-size: 24px;
+	}
 }

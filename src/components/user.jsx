@@ -20,7 +20,7 @@ const User = () => {
 			</picture>
 			<div className="flex flex-col items-center gap-y-2">
 				<h1 className="text-[32px] font-semibold">Matheus Mourão</h1>
-				<p className="text-[18px] font-light">Desenvolvedor Fron-end</p>
+				<p className="text-[18px] font-light">Desenvolvedor Front-end</p>
 
 				<div className="flex gap-x-3 mt-6">
 					<a
@@ -58,7 +58,7 @@ const User = () => {
 				</div>
 
 				<a href="" target="_blank" className="mt-6 buttonCV gap-x-2 px-2">
-					<FileArrowDown className="svg" size={32} weight="duotone" />
+					<FileArrowDown className="svg" size={32} weight="fill" />
 
 					<span>Download CV</span>
 				</a>

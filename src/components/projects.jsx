@@ -1,15 +1,15 @@
 import React from 'react';
 import ImgEcommerce from '../assets/Imgecommerce.png';
 import ImgWeatherApp from '../assets/weatherApp.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Projects = () => {
 	return (
 		<section className="card col-span-3 px-10 py-8">
-			<h2 className="text-[28px] font-semibold">Projetos</h2>
+			<h2 className="text-[28px] subtitle font-semibold">Projetos</h2>
 
 			<div className="project_content">
 				{/* Projeto 1 */}
-
 				<div className="flex flex-col items-center gap-y-3 w-full rounded-md pb-3 border border-body overflow-hidden group">
 					<picture className="w-full h-[250px] overflow-hidden relative">
 						<div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -32,6 +32,7 @@ const Projects = () => {
 						Ecommerce Shop
 					</strong>
 				</div>
+
 				{/* Projeto 2 */}
 				<div className="flex flex-col items-center gap-y-3 w-full rounded-md pb-3 border border-body overflow-hidden group">
 					<picture className="w-full h-[250px] overflow-hidden relative">
